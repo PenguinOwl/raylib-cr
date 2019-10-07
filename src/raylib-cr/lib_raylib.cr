@@ -503,8 +503,8 @@ lib LibRaylib
   fun init_window = InitWindow(width : Int32, height : Int32, title : UInt8*)
   fun close_window = CloseWindow
   fun window_ready? = IsWindowReady : Bool
-  fun window_should_close = WindowShouldClose : Bool
-  fun window_minimized = IsWindowMinimized : Bool
+  fun window_should_close? = WindowShouldClose : Bool
+  fun window_minimized? = IsWindowMinimized : Bool
   fun toggle_fullscreen = ToggleFullscreen
   fun set_window_icon = SetWindowIcon(image : Image)
   fun set_window_title = SetWindowTitle(title : UInt8*)
@@ -519,7 +519,7 @@ lib LibRaylib
 
   fun get_screen_width = GetScreenWidth : Int32
 
-  fun set_window_height = GetScreenHeight : Int32
+  fun get_window_height = GetScreenHeight : Int32
 
   fun show_cursor = ShowCursor
 
